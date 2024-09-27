@@ -40,8 +40,7 @@ public class CadastrarEmpresaServlet extends HttpServlet {
 		request.setAttribute("nome", empresa.getNome());
 	
 		//Calling JSP
-		RequestDispatcher rd = request.getRequestDispatcher("/empresaCadastrada.jsp");
-		rd.forward(request, response);
+		response.sendRedirect("listar-empresas");
 	}
 	
 }
