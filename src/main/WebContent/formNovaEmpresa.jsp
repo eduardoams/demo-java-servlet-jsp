@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <c:url value="/cadastrar-empresa" var="urlCadastrarEmpresa"></c:url>
 
 <!DOCTYPE html>
