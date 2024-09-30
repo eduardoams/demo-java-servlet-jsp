@@ -24,5 +24,15 @@ public class Banco {
 	public List<Empresa> getEmpresas() {
 		return Banco.empresas;
 	}
+	
+	public Empresa getEmpresaById(Integer id) {
+		for (Empresa emp : empresas) {
+			if (emp.getId() == id) {
+				return emp;
+			}
+		}
+		
+		return null;	
+	}
 
 }
